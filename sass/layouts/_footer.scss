@@ -6,17 +6,28 @@
 
  .footer-container {
      display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-content: center;
      flex-wrap: wrap;
+     text-align: center;
+     flex-direction: column;
+     align-content: center;
      align-items: center;
+ 
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        justify-content: center;
+        align-content: stretch;
+        align-items: baseline;
+    }
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 
  }
  
 
  .footer-address {
      margin-top: 28px;
+     
  }
 
  .footer-element:nth-child(n + 2) {
@@ -50,6 +61,7 @@
      font-size: 14px;
      line-height: 1.7;
      letter-spacing: 0.03em;
+     text-align: center;
      font-style: normal;
      color: var(--primary-link-color);
      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -174,7 +186,6 @@
 
 
  .subscribe-btn {
-    //  display: inline;
      display: block;
      font-family: 'Roboto' sans-serif;
      font-style: normal;
@@ -192,6 +203,7 @@
     @media screen and (min-width: 1200px) {
         margin-left: 12px;
         margin-top: 0px;
+        display: inline;
     }
  }
 
