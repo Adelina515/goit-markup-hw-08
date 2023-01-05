@@ -622,6 +622,7 @@ span.logo:hover, span.logo:focus {
 .picture-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .picture-list__img {
   display: block;

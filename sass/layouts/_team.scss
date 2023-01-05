@@ -4,6 +4,7 @@
  .picture-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     &__img {
             display: block;
             width: 100%;
